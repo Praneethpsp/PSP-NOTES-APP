@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Note from './components/Note';
@@ -22,6 +22,16 @@ function App() {
     });
   }
   
+  useEffect(()=>{
+    const notes = JSON.parse(localStorage.getItem('notes'));
+    if (notes){
+      setNotes(notes);
+    }
+  },[]);
+
+  useEffect(()=>{
+    localStorage.setItem('notes',JSON.stringify(notes));
+  },[notes]);
 
   return (
     <div>

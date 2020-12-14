@@ -21,7 +21,6 @@ export default function CreateNote(props){
 
     function updateChanges(event){
         props.onAdd(note);
-        event.preventDefault();
     }
 
 return (
@@ -42,14 +41,14 @@ return (
         onChange={handleChange}
         name="title"
         value={note.title}
-        placeholder="Title"
+        placeholder="Title of Note"
         autoComplete="off"
       />
       <textarea
         onChange={handleChange}
         name="content"
         value={note.content}
-        placeholder="Create a note..."
+        placeholder="Make a note..."
         rows="3"
         spellCheck="false"
       />
