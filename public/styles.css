@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #000000e8;
+  padding: 0;
+}
+
+header {
+  background-color: #f5ba13;
+  margin: auto;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(233, 232, 232, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-weight: 200;
+}
+
+header h1 span {
+  position: relative;
+  left: 0px;
+  top: -8px;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 80px;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+  margin-bottom: 1rem;
+
+}
+footer a{
+  color: #f5ba13;
+  text-decoration: none;
+}
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+form button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+  font-size: xx-large;
+}
+
+.note button {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  font-size: xx-large;
+}
+
+form {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+form input,
+form textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+@media screen and (min-width:540px){
+.headerCopyright{
+  display: none;
+}
+}
+@media screen and (max-width:540px){
+  form {
+  position: relative;
+  width: 75vw;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+.noteDiv {
+  position: relative;
+  width: 75vw;
+  margin: 30px auto 20px auto;
+ }
+ .note{
+    position: relative;
+  width: 75vw;
+  margin: 10px auto 10px auto;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+ }
+footer{
+  display: none;
+}
+.headerCopyright{
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.headerCopyright a{
+color: #f5ba13;
+text-decoration: none
+}
+}
